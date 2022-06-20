@@ -8,3 +8,7 @@ publish:
 	poetry publish --dry-run
 package-install:
 	python3 -m pip install --user dist/*.whl
+lint:
+	poetry run flake8 brain_games/
+format:
+	poetry run black brain_games/
