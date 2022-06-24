@@ -12,3 +12,5 @@ lint:
 	poetry run flake8 brain_games/
 format:
 	poetry run black brain_games/
+brain-even:
+	poetry run brain-even
