@@ -8,7 +8,6 @@ def make_quest():
 def try_count():
     return 3
 
-
 def even():
     num_for_quest = random.randint(1, 100)
     right_answer = "no" if num_for_quest % 2 else "yes"
