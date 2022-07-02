@@ -14,3 +14,5 @@ format:
 	poetry run black brain_games/
 brain-even:
 	poetry run brain-even
+brain-calc:
+	poetry run brain-calc
