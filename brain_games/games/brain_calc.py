@@ -8,7 +8,7 @@ def make_quest():
     Returns:
         String when says what user own do.
     """
-    return 'What is the result of the expression?'
+    return "What is the result of the expression?"
 
 
 def try_count():
@@ -21,18 +21,50 @@ def try_count():
 
 
 def random_number():
+    """Randomizer.
+
+    Returns:
+        random number between 1 and 25.
+    """
     return random.randint(1, 25)
 
 
 def summ(number1, number2):
+    """Summ two nums.
+
+    Args:
+        number1(int):number for operation.
+        number2(int):number for operation.
+
+    Returns:
+        result of expression.
+    """
     return number1 + number2
 
 
 def minus(number1, number2):
+    """Minus two nums.
+
+    Args:
+        number1(int):number for operation.
+        number2(int):number for operation.
+
+    Returns:
+        result of expression.
+    """
     return number1 - number2
 
 
 def multiplication(number1, number2):
+    """Multi two nums.
+
+    Args:
+        number1(int):number for operation.
+        number2(int):number for operation.
+
+    Returns:
+        result of expression.
+    """
     return number1 * number2
 
 
@@ -42,19 +74,19 @@ def game_stats():
     Returns:
         Number for operation and right answer 'yes' or 'no' for even game.
     """
-    option_mass = ['+', '-', '*']
+    option_mass = ["+", "-", "*"]
     option = random.choice(option_mass)
-    if option == '+':
+    if option == "+":
         number1 = random_number()
         number2 = random_number()
         right_answer = number1 + number2
         return f"{number1} + {number2}", f"{right_answer}"
-    elif option == '-':
+    elif option == "-":
         number1 = random_number()
         number2 = random_number()
         right_answer = number1 - number2
         return f"{number1} - {number2}", f"{right_answer}"
-    elif option == '*':
+    elif option == "*":
         number1 = random_number()
         number2 = random_number()
         right_answer = number1 * number2
