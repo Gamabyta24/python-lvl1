@@ -79,3 +79,7 @@ def print_try_again():
 def print_win():
     """Print if user give 3 correct answer."""
     print("You win!")
+
+
+def true_answer(right_answer, user_answer):
+    print(f"{user_answer} is wrong answer ;(. Correct answer was '{right_answer}'.")

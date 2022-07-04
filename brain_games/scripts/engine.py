@@ -22,6 +22,7 @@ def run(game, cli):
         if user_answer == right_answer:
             cli.print_correct()
         else:
+            cli.true_answer(right_answer, user_answer)
             cli.print_try_again()
             return
     cli.print_win()
