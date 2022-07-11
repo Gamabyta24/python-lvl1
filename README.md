@@ -8,6 +8,13 @@
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
+The package contains five simple mathematics quiz games:
+
+- Even check `brain-even`
+- Calculator `brain-calc`
+- Greatest common divider `brain-gcd`
+- Arithmetic progression `brain-progression`
+- Prime number `brain-prime`
 
 https://asciinema.org/a/1nj7wp9GjMMKHLty7ExvtBY4o - brain-even
 
