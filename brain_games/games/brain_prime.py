@@ -1,7 +1,6 @@
-"""GCD GAME."""
+"""PRIME GAME."""
 
 import random
-from math import gcd
 
 
 def make_quest():
@@ -32,12 +31,17 @@ def random_number():
 
 
 def game_stats():
-    """Stats for user.
+    """Game func.
 
     Returns:
-        two numbers and right answer.
+        string with 1 number.
+        right answer.
     """
-    number1 = random_number()
-    number2 = random_number()
-    num_nod = gcd(number1, number2)
-    return f"{number1},{number2}", f"{num_nod}"
+    num_for_operation = 0
+    number = random_number()
+    for _ in range(2, number // 2 + 1):
+        if number % _ == 0:
+            num_for_operation = num_for_operation + 1
+    if num_for_operation <= 0:
+        return number, "yes"
+    return number, "no"

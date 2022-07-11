@@ -74,20 +74,16 @@ def game_stats():
     Returns:
         Number for operation and right answer 'yes' or 'no' for even game.
     """
+    number1 = random_number()
+    number2 = random_number()
     option_mass = ["+", "-", "*"]
     option = random.choice(option_mass)
     if option == "+":
-        number1 = random_number()
-        number2 = random_number()
-        right_answer = number1 + number2
+        right_answer = summ(number1, number2)
         return f"{number1} + {number2}", f"{right_answer}"
     elif option == "-":
-        number1 = random_number()
-        number2 = random_number()
-        right_answer = number1 - number2
+        right_answer = minus(number1, number2)
         return f"{number1} - {number2}", f"{right_answer}"
     elif option == "*":
-        number1 = random_number()
-        number2 = random_number()
-        right_answer = number1 * number2
+        right_answer = multiplication(number1, number2)
         return f"{number1} * {number2}", f"{right_answer}"

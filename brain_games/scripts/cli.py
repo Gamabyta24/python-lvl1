@@ -82,4 +82,10 @@ def print_win():
 
 
 def true_answer(right_answer, user_answer):
-    print(f"{user_answer} is wrong answer ;(. Correct answer was '{right_answer}'.")
+    """Print right answer and user answ.
+
+    Args:
+        right_answer(string): true answer
+        user_answer(string): answer from user
+    """
+    print(f"'{user_answer}' is wrong answer ;( Correct answer was '{right_answer}'.")
