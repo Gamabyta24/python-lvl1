@@ -1,5 +1,6 @@
 """File with game."""
 import random
+from operator import add, mul, sub
 
 
 def make_quest():
@@ -76,14 +77,8 @@ def game_stats():
     """
     number1 = random_number()
     number2 = random_number()
-    option_mass = ["+", "-", "*"]
-    option = random.choice(option_mass)
-    if option == "+":
-        right_answer = summ(number1, number2)
-        return f"{number1} + {number2}", f"{right_answer}"
-    elif option == "-":
-        right_answer = minus(number1, number2)
-        return f"{number1} - {number2}", f"{right_answer}"
-    elif option == "*":
-        right_answer = multiplication(number1, number2)
-        return f"{number1} * {number2}", f"{right_answer}"
+    pair_mass = [("+", add), ("-", sub), ("*", mul)]
+    option = random.choice(pair_mass)
+    operator_for_num, fuc_for_num = option
+    right_answer = fuc_for_num(number1, number2)
+    return f"{number1} {operator_for_num} {number2}", f"{right_answer}"
