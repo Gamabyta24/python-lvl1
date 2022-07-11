@@ -13,6 +13,9 @@ The package contains five simple mathematics quiz games:
 - Arithmetic progression `brain-progression`
 - Prime number `brain-prime`
 
-[![asciicast](https://asciinema.org/a/506017.svg)](https://asciinema.org/a/506017) - brain-even
+### Заголовок третьего уровня
 
+[![asciicast](https://asciinema.org/a/506017.svg)](https://asciinema.org/a/506017)
+
+### Заголовок третьего уровня
 [![asciicast](https://asciinema.org/a/pPdnFMS3FfewvsNIB2egXWmDC.svg)](https://asciinema.org/a/pPdnFMS3FfewvsNIB2egXWmDC) - brain-gcd
